@@ -13,7 +13,7 @@ void rotate(int* nums, int numsSize, int k){
         }
     */
     /* Time Complexity O(n) */
-    k %= numsSize;
+    k %= numsSize;      // This line for decreasing number of reversing if k > arraySize
     reverse(nums , 0 , numsSize - 1 - k);
     reverse(nums , numsSize - k , numsSize - 1);
     reverse(nums , 0 , numsSize - 1);
