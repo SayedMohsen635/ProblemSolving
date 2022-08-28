@@ -8,7 +8,7 @@ char * reverseWords(char * s){
             reverseString(s + start , end - start);
             start = end + 1;
         }
-        ++end;
+        end++;
     }
 }
 
