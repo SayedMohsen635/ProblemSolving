@@ -4,11 +4,5 @@ void reverseString(char* s, int sSize){
         temp = s[i];
         s[i] = s[j];
         s[j] = temp;
-        // if(i == j){
-        //     return;
-        // }
-        // if(sSize % 2 != 0 && j < i){
-        //     return;
-        // }
     }
 }
