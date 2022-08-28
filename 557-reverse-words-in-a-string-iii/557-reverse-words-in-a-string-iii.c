@@ -3,14 +3,13 @@ char * reverseWords(char * s){
     while(1){
         if(s[end] == '\0'){
             reverseString(s + start , end - start);
-            break;
+            return s;
         }else if(s[end] == ' '){
             reverseString(s + start , end - start);
             start = end + 1;
         }
         ++end;
     }
-    return s;
 }
 
 void reverseString(char* s, int sSize){
