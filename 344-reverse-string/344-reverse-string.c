@@ -7,8 +7,8 @@ void reverseString(char* s, int sSize){
         if(i == j){
             return;
         }
-        if(sSize % 2 != 0 && j < i){
-            return;
-        }
+        // if(sSize % 2 != 0 && j < i){
+        //     return;
+        // }
     }
 }
